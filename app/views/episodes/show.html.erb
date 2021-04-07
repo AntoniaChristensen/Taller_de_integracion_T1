@@ -21,7 +21,7 @@
         <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-        <%= "Episode %d" % params[:id] %>
+        <%= "Season %d" % @episode["season"] %>
           <br>
         <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
@@ -31,15 +31,28 @@
         </span>
       </div>
     </nav>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
     <nav class="level-left">
       <div class="level-item">
-        <%= "Title: %s" % @episode["title"] %> <br>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <%= "Episode %d" %  @episode["episode"] %>
         <br>
-        <%= "Season: %s" % @episode["season"] %> <br>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+      </div>
+    </nav>
+    <nav class="level-left">
+      <div class="level-item">
+        <br>
+        <%= "Title: %s" % @episode["title"] %> <br>
         <br>
         <%= "Air Date: %s" % @episode["air_date"].split("T")[0]%> <br>
         <br>

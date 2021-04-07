@@ -1,0 +1,71 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<section class="hero is-link">
+  <div class="hero-body">
+    <div class="container">
+      <nav class="level">
+        <div class="level-item">
+          <h1 class="title">Tarea 1: Consumir una API</h1>
+        </div>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <nav class="level">
+      <div class="level-item">
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <%= "%s" % @serie%>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+      </div>
+    </nav>
+    <nav class="level">
+      <div class="level-item">
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <%= "Season %d" % params[:id]%>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+      </div>
+    </nav>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <% @temp.each do |e| %>
+        <nav class="level-left">
+          <div class="level-item">
+            <td><%= link_to e, episode_path(@episodios[e])%></td> <br>
+          </div>
+        </nav>
+      <%end %>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    Copyright © 2021 Tarea 1 Antonia Christensen. All rights reserved.
+    <div class="level-right">
+      <p class="level-item">
+      </p>
+    </div>
+  </div>
+</footer>
