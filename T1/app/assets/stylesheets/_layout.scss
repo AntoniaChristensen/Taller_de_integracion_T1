@@ -1,0 +1,48 @@
+//Sacado de https://www.youtube.com/watch?reload=9&v=87fBAWc25Sk
+body {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  height:100vh;
+}
+.header {
+  background-color: #EFEFEF;
+  padding:0rem 1.5rem;
+}
+.section {
+  display:flex;
+  flex:1 0 auto;
+}
+
+#notice_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #32dc3994;
+  color: #f2f2f2;
+  .notice {
+    padding: 1.55rem 0;
+    text-align: center;
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+}
+
+#alert_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #e70404bf;
+  color: #f2f2f2;
+  .alert {
+    padding: 1.55rem 0;
+    text-align: center;
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+}
+

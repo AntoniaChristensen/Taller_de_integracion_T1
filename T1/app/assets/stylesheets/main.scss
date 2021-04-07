@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+$family-primary:'Ubuntu', sans-serif;
+@import 'bulma/bulma';
+@import '_layout';
+$footer-background-color:#342E37;
+$footer-padding:3rem 1.5rem;
+
+h1 {
+  margin-top: 0;
+}
