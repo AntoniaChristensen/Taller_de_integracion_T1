@@ -20,7 +20,6 @@ class SeasonsController < ApplicationController
         @episodios[episode["title"]] = episode["episode_id"]
       end
     end
-    puts(@episodios)
   end
 
   def get_episodios

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'characters/:name', to: 'characters#show', as: 'character'
+  get 'characters/search'
   get 'episodes/show'
   get 'episode/show'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

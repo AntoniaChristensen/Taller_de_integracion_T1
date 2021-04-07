@@ -59,7 +59,11 @@
         <%= "Characters: " %> <br>
         <br>
         <%@episode["characters"].each do |char| %>
-          <%= char %> <br>
+      </div>
+    </nav>
+    <nav class="level-left">
+      <div class="level-item">
+          <%= link_to char, character_path(char) %> <br>
         <% end %>
       </div>
     </nav>
