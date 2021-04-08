@@ -1,13 +1,17 @@
 class CharactersController < ApplicationController
   def show
     name = params[:name].split('%')
-    puts(name)
     ur = name.join("+")
-    puts(ur)
     url_character = 'https://tarea-1-breaking-bad.herokuapp.com/api/characters/?name=%s' % ur
-    puts(url_character)
-    @character = JSON.parse(HTTP.get(url_character).body)[0]
-    puts(@character)
+    response = HTTP.get(url_character)
+    if response.status.success?
+      @character = JSON.parse(response)[0]
+      if @character.nil?
+        redirect_to root_path, alert: 'Character Not Found'
+      end
+    else
+      redirect_to root_path, alert: 'Character Not Found'
+    end
   end
 
   def search

@@ -5682,3 +5682,2225 @@ Processing by CharactersController#show as HTML
 Completed 200 OK in 214ms (Views: 16.0ms | Allocations: 11568)
 
 
+Started GET "/characters/Jesse%25Pinkmans" for 127.0.0.1 at 2021-04-07 23:20:13 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkmans"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2718)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2787)
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 0.0ms | Allocations: 6759)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-07 23:28:51 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 943)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1008)
+Completed 500 Internal Server Error in 181ms (Allocations: 2948)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193:in `[]'
+app/views/characters/show.html.erb:193
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:29:14 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 563)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 19086)
+Completed 200 OK in 421ms (Views: 47.1ms | Allocations: 24627)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-07 23:29:16 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 8833)
+Completed 200 OK in 419ms (Views: 17.1ms | Allocations: 14139)
+
+
+Started GET "/episodes/Breaking%20Bad/1" for 127.0.0.1 at 2021-04-07 23:29:19 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 8895)
+Completed 200 OK in 193ms (Views: 16.9ms | Allocations: 11068)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:29:20 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1028)
+Completed 500 Internal Server Error in 172ms (Allocations: 3351)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193:in `[]'
+app/views/characters/show.html.erb:193
+Started GET "/episodes/Breaking%20Bad/1" for 127.0.0.1 at 2021-04-07 23:34:00 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 512)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 8417)
+Completed 200 OK in 196ms (Views: 17.9ms | Allocations: 10218)
+
+
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-07 23:34:03 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1028)
+Completed 500 Internal Server Error in 184ms (Allocations: 2969)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193:in `[]'
+app/views/characters/show.html.erb:193
+Started GET "/episodes/Breaking%20Bad/1" for 127.0.0.1 at 2021-04-07 23:34:41 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 512)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8417)
+Completed 200 OK in 199ms (Views: 16.0ms | Allocations: 10219)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:34:42 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 7918)
+Completed 200 OK in 206ms (Views: 14.9ms | Allocations: 10323)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:34:51 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 194)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 7909)
+Completed 200 OK in 194ms (Views: 14.6ms | Allocations: 10197)
+
+
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-07 23:34:54 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1468)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1532)
+Completed 500 Internal Server Error in 186ms (Allocations: 3163)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-07 23:36:58 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1443)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1507)
+Completed 500 Internal Server Error in 189ms (Allocations: 3262)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:38:19 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 8105)
+Completed 200 OK in 212ms (Views: 17.2ms | Allocations: 9912)
+
+
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-07 23:38:23 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1464)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1528)
+Completed 500 Internal Server Error in 205ms (Allocations: 3158)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:39:55 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 8105)
+Completed 200 OK in 198ms (Views: 14.0ms | Allocations: 9916)
+
+
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-07 23:39:59 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1464)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1528)
+Completed 500 Internal Server Error in 191ms (Allocations: 3164)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:40:40 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+Redirected to 
+Completed 500 Internal Server Error in 180ms (Allocations: 3488)
+
+
+  
+NoMethodError (undefined method `back_url' for #<CharactersController:0x00000000010b80>):
+  
+app/controllers/characters_controller.rb:12:in `show'
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-07 23:40:46 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+Redirected to 
+Completed 500 Internal Server Error in 200ms (Allocations: 3488)
+
+
+  
+NoMethodError (undefined method `back_url' for #<CharactersController:0x00000000010fb8>):
+  
+app/controllers/characters_controller.rb:12:in `show'
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:42:40 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+Completed 500 Internal Server Error in 195ms (Allocations: 2473)
+
+
+  
+NoMethodError (undefined method `empty?' for #<HTTP::Response:0x00007fdf8f5b3198>):
+  
+app/controllers/characters_controller.rb:8:in `show'
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:43:29 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+Completed 500 Internal Server Error in 201ms (Allocations: 2480)
+
+
+  
+NoMethodError (undefined method `count' for #<HTTP::Response:0x00007fdf9700c110>):
+  
+app/controllers/characters_controller.rb:8:in `show'
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:43:44 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+Completed 500 Internal Server Error in 269ms (Allocations: 1848)
+
+
+  
+HTTP::StateError (body has already been consumed):
+  
+app/controllers/characters_controller.rb:8:in `count'
+app/controllers/characters_controller.rb:8:in `show'
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:44:06 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+Completed 500 Internal Server Error in 232ms (Allocations: 1837)
+
+
+  
+HTTP::StateError (body is being streamed):
+  
+app/controllers/characters_controller.rb:9:in `show'
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:44:47 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+Completed 500 Internal Server Error in 223ms (Allocations: 2561)
+
+
+  
+NoMethodError (undefined method `status' for #<HTTP::Response::Body:b2c0 @streaming=false>):
+  
+app/controllers/characters_controller.rb:7:in `show'
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:46:06 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+Completed 500 Internal Server Error in 199ms (Allocations: 1831)
+
+
+  
+HTTP::StateError (body is being streamed):
+  
+app/controllers/characters_controller.rb:11:in `show'
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:47:36 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1442)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1506)
+Completed 500 Internal Server Error in 200ms (Allocations: 3294)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    190:     <article class="media">
+    191:       <figure class="media-left">
+    192:         <p class="image is-128x128">
+    193:           <%= image_tag(@character["img"]) %>
+    194:         </p>
+    195:       </figure>
+    196:       <div class="media-content">
+  
+app/views/characters/show.html.erb:193
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:48:24 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 8105)
+Completed 200 OK in 200ms (Views: 19.5ms | Allocations: 9922)
+
+
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-07 23:48:29 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+Completed 500 Internal Server Error in 187ms (Allocations: 2330)
+
+
+  
+NoMethodError (undefined method `count' for nil:NilClass):
+  
+app/controllers/characters_controller.rb:9:in `show'
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-07 23:49:05 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 191ms (Allocations: 1541)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:49:06 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8193)
+Completed 200 OK in 420ms (Views: 15.3ms | Allocations: 13341)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-07 23:49:09 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 7979)
+Completed 200 OK in 5714ms (Views: 14.7ms | Allocations: 13671)
+
+
+Started GET "/episodes/Breaking%20Bad/2" for 127.0.0.1 at 2021-04-07 23:49:23 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 8076)
+Completed 200 OK in 183ms (Views: 17.4ms | Allocations: 10480)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:49:38 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 7955)
+Completed 200 OK in 180ms (Views: 20.5ms | Allocations: 10374)
+
+
+Started GET "/seasons/BB/2" for 127.0.0.1 at 2021-04-07 23:49:40 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 8144)
+Completed 200 OK in 406ms (Views: 13.5ms | Allocations: 13812)
+
+
+Started GET "/episodes/Breaking%20Bad/9" for 127.0.0.1 at 2021-04-07 23:49:42 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 482)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8197)
+Completed 200 OK in 183ms (Views: 14.7ms | Allocations: 10486)
+
+
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-07 23:49:44 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 7907)
+Completed 200 OK in 212ms (Views: 14.6ms | Allocations: 10210)
+
+
+Started GET "/characters/Jesse%25Pinkmans" for 127.0.0.1 at 2021-04-07 23:49:48 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkmans"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 177ms (Allocations: 1531)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:49:48 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 7977)
+Completed 200 OK in 425ms (Views: 13.4ms | Allocations: 12947)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:54:41 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 666.5ms | Allocations: 60091)
+Completed 200 OK in 1117ms (Views: 667.4ms | Allocations: 65059)
+
+
+Started GET "/seasons/Saul/1" for 127.0.0.1 at 2021-04-07 23:54:48 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 375)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8090)
+Completed 200 OK in 391ms (Views: 14.3ms | Allocations: 13752)
+
+
+Started GET "/episodes/Better%20Call%20Saul/63" for 127.0.0.1 at 2021-04-07 23:54:50 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"63"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 377)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8092)
+Completed 200 OK in 209ms (Views: 14.8ms | Allocations: 10385)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-07 23:54:51 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 290)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8005)
+Completed 200 OK in 192ms (Views: 15.3ms | Allocations: 10309)
+
+
+Started GET "/characters/Saul%25Goodmane" for 127.0.0.1 at 2021-04-07 23:54:54 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodmane"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 180ms (Allocations: 1531)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:54:54 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 7977)
+Completed 200 OK in 406ms (Views: 14.3ms | Allocations: 12941)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:55:33 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 581.3ms | Allocations: 58908)
+Completed 200 OK in 963ms (Views: 582.0ms | Allocations: 63879)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-07 23:55:36 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 7978)
+Completed 200 OK in 445ms (Views: 19.4ms | Allocations: 13660)
+
+
+Started GET "/episodes/Breaking%20Bad/1" for 127.0.0.1 at 2021-04-07 23:55:38 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 482)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 8198)
+Completed 200 OK in 196ms (Views: 15.0ms | Allocations: 10477)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-07 23:55:39 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 194)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 7910)
+Completed 200 OK in 198ms (Views: 15.2ms | Allocations: 10204)
+
+
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-07 23:55:42 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 161ms (Allocations: 1531)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:55:42 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 7978)
+Completed 200 OK in 395ms (Views: 13.9ms | Allocations: 12947)
+
+
+Started GET "/seasons/Saul/1" for 127.0.0.1 at 2021-04-07 23:56:32 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 382)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8118)
+Completed 200 OK in 372ms (Views: 15.7ms | Allocations: 13337)
+
+
+Started GET "/episodes/Better%20Call%20Saul/65" for 127.0.0.1 at 2021-04-07 23:56:35 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"65"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 8163)
+Completed 200 OK in 193ms (Views: 15.6ms | Allocations: 10557)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-07 23:56:36 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 8052)
+Completed 200 OK in 199ms (Views: 14.7ms | Allocations: 10467)
+
+
+Started GET "/characters/Saul%25Goodmane" for 127.0.0.1 at 2021-04-07 23:56:40 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodmane"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 166ms (Allocations: 1535)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:56:40 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 263)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 7979)
+Completed 200 OK in 420ms (Views: 14.2ms | Allocations: 12944)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:58:59 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 680)
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-07 23:59:01 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 792.8ms | Allocations: 96074)
+Completed 200 OK in 1348ms (Views: 796.2ms | ActiveRecord: 0.0ms | Allocations: 103407)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 910)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 8961)
+Completed 200 OK in 443ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 65587)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-07 23:59:20 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-07 23:59:22 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 7985)
+Completed 200 OK in 406ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 12980)
+
+
+Started GET "/episodes/Breaking%20Bad/1" for 127.0.0.1 at 2021-04-07 23:59:25 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1174)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 8902)
+Completed 200 OK in 187ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 11710)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8099)
+Completed 200 OK in 6764ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 49771)
+
+
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-07 23:59:27 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1043)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 8849)
+Completed 200 OK in 207ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 11678)
+
+
+Started GET "/characters/Jesse%25Pinkmanw" for 127.0.0.1 at 2021-04-07 23:59:32 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkmanw"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 162ms (ActiveRecord: 0.0ms | Allocations: 1552)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:59:33 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 8096)
+Completed 200 OK in 490ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 13077)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:00:18 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 164.4ms | Allocations: 34442)
+Completed 200 OK in 605ms (Views: 168.3ms | ActiveRecord: 0.0ms | Allocations: 41761)
+
+
+Started GET "/seasons/Saul/2" for 127.0.0.1 at 2021-04-08 00:00:21 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1022)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 8743)
+Completed 200 OK in 455ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 14548)
+
+
+Started GET "/episodes/Better%20Call%20Saul/73" for 127.0.0.1 at 2021-04-08 00:00:22 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"73"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1070)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8795)
+Completed 200 OK in 267ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 11647)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-08 00:00:24 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8968)
+Completed 200 OK in 197ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 11745)
+
+
+Started GET "/characters/Saul%25Goodmani" for 127.0.0.1 at 2021-04-08 00:00:27 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodmani"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 175ms (ActiveRecord: 0.0ms | Allocations: 1549)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:00:27 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 7989)
+Completed 200 OK in 391ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 12959)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:04:51 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8872)
+Completed 200 OK in 508ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 14720)
+
+
+Started GET "/episodes/Breaking%20Bad/3" for 127.0.0.1 at 2021-04-08 00:04:53 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8885)
+Completed 200 OK in 247ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 11228)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:04:55 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8858)
+Completed 200 OK in 188ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 11187)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:05:02 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 8091)
+Completed 200 OK in 417ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 13776)
+
+
+Started GET "/episodes/Breaking%20Bad/3" for 127.0.0.1 at 2021-04-08 00:05:03 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 8205)
+Completed 200 OK in 213ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 10493)
+
+
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-08 00:05:05 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 7920)
+Completed 200 OK in 221ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 9716)
+
+
+Started GET "/characters/Jesse%25Pinkmano" for 127.0.0.1 at 2021-04-08 00:05:10 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkmano"}
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.0ms | Allocations: 1880)
+
+
+  
+TypeError (no implicit conversion of Symbol into String):
+  
+app/controllers/characters_controller.rb:10:in `show'
+Started GET "/characters/Jesse%25Pinkmano" for 127.0.0.1 at 2021-04-08 00:07:44 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkmano"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 180ms (ActiveRecord: 0.0ms | Allocations: 1633)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:07:44 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 608)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 8558)
+Completed 200 OK in 393ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 13879)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:12:18 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 900)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 8874)
+Completed 200 OK in 489ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 14708)
+
+
+Started GET "/episodes/Breaking%20Bad/1" for 127.0.0.1 at 2021-04-08 00:12:20 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1168)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 8887)
+Completed 200 OK in 206ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 11651)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:12:21 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 8756)
+Completed 200 OK in 224ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 11119)
+
+
+Started GET "/characters/Walter%25Whites" for 127.0.0.1 at 2021-04-08 00:12:25 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whites"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 228ms (ActiveRecord: 0.0ms | Allocations: 1535)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:12:26 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 604)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8323)
+Completed 200 OK in 472ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 13419)
+
+
+Started GET "/seasons/Saul/1" for 127.0.0.1 at 2021-04-08 00:16:42 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1001)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8893)
+Completed 200 OK in 455ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 15270)
+
+
+Started GET "/episodes/Better%20Call%20Saul/65" for 127.0.0.1 at 2021-04-08 00:16:43 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"65"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1041)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8865)
+Completed 200 OK in 194ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 11171)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-08 00:16:44 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8845)
+Completed 200 OK in 198ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 11623)
+
+
+Started GET "/characters/Saul%25Goodmani" for 127.0.0.1 at 2021-04-08 00:16:50 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodmani"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 190ms (ActiveRecord: 0.0ms | Allocations: 1531)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:16:50 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 8322)
+Completed 200 OK in 411ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 13413)
+
+
+Started GET "/seasons/Saul/1" for 127.0.0.1 at 2021-04-08 00:18:11 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1008)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8983)
+Completed 200 OK in 442ms (Views: 17.6ms | Allocations: 14798)
+
+
+Started GET "/episodes/Better%20Call%20Saul/64" for 127.0.0.1 at 2021-04-08 00:18:13 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"64"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8843)
+Completed 200 OK in 210ms (Views: 17.1ms | Allocations: 11611)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-08 00:18:14 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 8954)
+Completed 200 OK in 275ms (Views: 19.7ms | Allocations: 11745)
+
+
+Started GET "/characters/Saul%25Goodmani" for 127.0.0.1 at 2021-04-08 00:18:18 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodmani"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 172ms (Allocations: 1527)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:18:18 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 8360)
+Completed 200 OK in 421ms (Views: 29.1ms | Allocations: 13452)
+
+
+Started GET "/seasons/Saul/2" for 127.0.0.1 at 2021-04-08 00:18:26 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 376)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 8092)
+Completed 200 OK in 427ms (Views: 25.0ms | Allocations: 13752)
+
+
+Started GET "/episodes/Better%20Call%20Saul/73" for 127.0.0.1 at 2021-04-08 00:18:27 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"73"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8205)
+Completed 200 OK in 185ms (Views: 14.7ms | Allocations: 10498)
+
+
+Started GET "/characters/Mike%25Ehrmantraut" for 127.0.0.1 at 2021-04-08 00:18:29 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantraut"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 297)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8016)
+Completed 200 OK in 180ms (Views: 14.6ms | Allocations: 10311)
+
+
+Started GET "/characters/Mike%25Ehrmantrauty" for 127.0.0.1 at 2021-04-08 00:18:32 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantrauty"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 172ms (Allocations: 1534)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:18:33 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 7978)
+Completed 200 OK in 385ms (Views: 13.0ms | Allocations: 12943)
+
+
+Started GET "/seasons/Saul/1" for 127.0.0.1 at 2021-04-08 00:21:55 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1006)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 8920)
+Completed 200 OK in 450ms (Views: 20.4ms | Allocations: 15249)
+
+
+Started GET "/episodes/Better%20Call%20Saul/63" for 127.0.0.1 at 2021-04-08 00:21:57 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"63"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8836)
+Completed 200 OK in 199ms (Views: 17.5ms | Allocations: 11609)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-08 00:22:00 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8845)
+Completed 200 OK in 212ms (Views: 17.3ms | Allocations: 11643)
+
+
+Started GET "/characters/Saul%25Goodmano" for 127.0.0.1 at 2021-04-08 00:22:05 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodmano"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 185ms (Allocations: 1531)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:22:06 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 631)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 8350)
+Completed 200 OK in 411ms (Views: 15.0ms | Allocations: 13449)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:22:33 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 287)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8090)
+Completed 200 OK in 434ms (Views: 16.2ms | Allocations: 13241)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:22:35 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 263)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 7979)
+Completed 200 OK in 415ms (Views: 14.1ms | Allocations: 13638)
+
+
+Started GET "/episodes/Breaking%20Bad/2" for 127.0.0.1 at 2021-04-08 00:22:36 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 8142)
+Completed 200 OK in 179ms (Views: 15.5ms | Allocations: 10499)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:22:38 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 7918)
+Completed 200 OK in 199ms (Views: 15.6ms | Allocations: 10336)
+
+
+Started GET "/characters/Walter%25Whitew" for 127.0.0.1 at 2021-04-08 00:22:42 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitew"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 185ms (Allocations: 1528)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:22:42 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 7998)
+Completed 200 OK in 829ms (Views: 14.2ms | Allocations: 12969)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:25:41 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8138)
+Completed 200 OK in 398ms (Views: 15.8ms | Allocations: 13098)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:25:42 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 8006)
+Completed 200 OK in 400ms (Views: 14.3ms | Allocations: 13621)
+
+
+Started GET "/episodes/Breaking%20Bad/3" for 127.0.0.1 at 2021-04-08 00:25:43 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 482)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 8210)
+Completed 200 OK in 174ms (Views: 15.3ms | Allocations: 10471)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:25:45 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 194)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 7924)
+Completed 200 OK in 197ms (Views: 17.4ms | Allocations: 10220)
+
+
+Started GET "/characters/Walter%25Whitey" for 127.0.0.1 at 2021-04-08 00:25:47 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitey"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 165ms (Allocations: 1527)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:25:48 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8103)
+Completed 200 OK in 397ms (Views: 15.4ms | Allocations: 13078)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:26:03 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8496)
+Completed 200 OK in 415ms (Views: 15.3ms | Allocations: 13532)
+
+
+Started GET "/seasons/BB/4" for 127.0.0.1 at 2021-04-08 00:26:04 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8210)
+Completed 200 OK in 412ms (Views: 14.9ms | Allocations: 13876)
+
+
+Started GET "/episodes/Breaking%20Bad/34" for 127.0.0.1 at 2021-04-08 00:26:05 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"34"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 625)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8341)
+Completed 200 OK in 188ms (Views: 15.5ms | Allocations: 10611)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:26:07 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 194)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 7910)
+Completed 200 OK in 193ms (Views: 15.4ms | Allocations: 10210)
+
+
+Started GET "/characters/Walter%25Whitey" for 127.0.0.1 at 2021-04-08 00:26:09 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitey"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 176ms (Allocations: 1526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:26:09 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8049)
+Completed 200 OK in 405ms (Views: 15.4ms | Allocations: 13014)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:27:44 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8822)
+Completed 200 OK in 482ms (Views: 17.2ms | Allocations: 15144)
+
+
+Started GET "/episodes/Breaking%20Bad/2" for 127.0.0.1 at 2021-04-08 00:27:46 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 988)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 8745)
+Completed 200 OK in 186ms (Views: 19.8ms | Allocations: 11498)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:27:48 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1033)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 8756)
+Completed 200 OK in 201ms (Views: 17.3ms | Allocations: 11538)
+
+
+Started GET "/characters/Walter%25Whitey" for 127.0.0.1 at 2021-04-08 00:27:50 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitey"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 164ms (Allocations: 1526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:27:50 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 642)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8463)
+Completed 200 OK in 408ms (Views: 15.5ms | Allocations: 13558)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:30:14 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 779.7ms | Allocations: 93628)
+Completed 200 OK in 1192ms (Views: 783.7ms | ActiveRecord: 0.0ms | Allocations: 100943)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:30:17 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 910)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 8853)
+Completed 200 OK in 416ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 14654)
+
+
+Started GET "/episodes/Breaking%20Bad/6" for 127.0.0.1 at 2021-04-08 00:30:18 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8865)
+Completed 200 OK in 218ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 11670)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:30:19 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 8881)
+Completed 200 OK in 226ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 11690)
+
+
+Started GET "/characters/Walter%25Whitey" for 127.0.0.1 at 2021-04-08 00:30:22 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitey"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 176ms (ActiveRecord: 0.0ms | Allocations: 1539)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:30:22 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8018)
+Completed 200 OK in 393ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 12993)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:32:27 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 889)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+
+  Rendered layout layouts/application.html.erb (Duration: 660.5ms | Allocations: 9873)
+Completed 200 OK in 1109ms (Views: 663.1ms | ActiveRecord: 0.0ms | Allocations: 16279)
+
+
+Started GET "/episodes/Breaking%20Bad/2" for 127.0.0.1 at 2021-04-08 00:32:29 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 993)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 8826)
+Completed 200 OK in 196ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 11582)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:32:32 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8761)
+Completed 200 OK in 203ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 11546)
+
+
+Started GET "/characters/Walter%25Whitey" for 127.0.0.1 at 2021-04-08 00:32:34 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitey"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 164ms (ActiveRecord: 0.0ms | Allocations: 1523)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:32:35 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 633)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 8358)
+Completed 200 OK in 414ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 13449)
+
+
+Started GET "/seasons/Saul/2" for 127.0.0.1 at 2021-04-08 00:34:17 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 376)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+
+  Rendered layout layouts/application.html.erb (Duration: 568.5ms | Allocations: 9262)
+Completed 200 OK in 1021ms (Views: 569.3ms | ActiveRecord: 0.0ms | Allocations: 14925)
+
+
+Started GET "/episodes/Better%20Call%20Saul/73" for 127.0.0.1 at 2021-04-08 00:34:18 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"73"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 8210)
+Completed 200 OK in 206ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 10480)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-08 00:34:19 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 8024)
+Completed 200 OK in 203ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 10307)
+
+
+Started GET "/characters/Saul%25Goodmans" for 127.0.0.1 at 2021-04-08 00:34:22 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodmans"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 180ms (ActiveRecord: 0.0ms | Allocations: 1526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:34:22 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 8110)
+Completed 200 OK in 443ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 13086)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:34:35 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 278)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+
+  Rendered layout layouts/application.html.erb (Duration: 600.4ms | Allocations: 9162)
+Completed 200 OK in 991ms (Views: 601.1ms | ActiveRecord: 0.0ms | Allocations: 14129)
+
+
+Started GET "/seasons/Saul/1" for 127.0.0.1 at 2021-04-08 00:34:37 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 375)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8203)
+Completed 200 OK in 407ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 13814)
+
+
+Started GET "/episodes/Better%20Call%20Saul/63" for 127.0.0.1 at 2021-04-08 00:34:39 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Better Call Saul", "id"=>"63"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 377)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 8101)
+Completed 200 OK in 194ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 10375)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-08 00:34:40 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 290)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 8129)
+Completed 200 OK in 208ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 10412)
+
+
+Started GET "/characters/Saul%25Goodmanw" for 127.0.0.1 at 2021-04-08 00:34:43 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodmanw"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 220ms (ActiveRecord: 0.0ms | Allocations: 1526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:34:43 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8113)
+Completed 200 OK in 394ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 13084)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:38:10 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 780)
+  Rendered layout layouts/application.html.erb (Duration: 109.0ms | Allocations: 12951)
+Completed 500 Internal Server Error in 555ms (ActiveRecord: 0.0ms | Allocations: 20239)
+
+
+  
+ActionView::Template::Error (link_directory argument must be a directory):
+  
+app/assets/config/manifest.js:2
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:39:56 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 7204)
+Completed 500 Internal Server Error in 480ms (ActiveRecord: 0.0ms | Allocations: 12249)
+
+
+  
+ActionView::Template::Error (link_directory argument must be a directory):
+  
+app/assets/config/manifest.js:2
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:40:13 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 780)
+  Rendered layout layouts/application.html.erb (Duration: 681.1ms | Allocations: 66404)
+Completed 500 Internal Server Error in 1525ms (ActiveRecord: 0.0ms | Allocations: 73683)
+
+
+  
+ActionView::Template::Error (link_directory argument must be a directory):
+  
+app/assets/config/manifest.js:2
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:41:23 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 76.6ms | Allocations: 29166)
+Completed 500 Internal Server Error in 579ms (ActiveRecord: 0.0ms | Allocations: 34212)
+
+
+  
+ActionView::Template::Error (link_directory argument must be a directory):
+  
+app/assets/config/manifest.js:2
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:41:39 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 278)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+
+  Rendered layout layouts/application.html.erb (Duration: 660.9ms | Allocations: 39421)
+Completed 200 OK in 1083ms (Views: 661.7ms | ActiveRecord: 0.0ms | Allocations: 44397)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:41:42 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 910)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 8936)
+Completed 200 OK in 420ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 14744)
+
+
+Started GET "/episodes/Breaking%20Bad/2" for 127.0.0.1 at 2021-04-08 00:41:43 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1021)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 9051)
+Completed 200 OK in 273ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 11885)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:41:44 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1045)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8960)
+Completed 200 OK in 204ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 11738)
+
+
+Started GET "/characters/Walter%25Whitey" for 127.0.0.1 at 2021-04-08 00:41:47 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitey"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 178ms (ActiveRecord: 0.0ms | Allocations: 1539)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:41:47 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8204)
+Completed 200 OK in 421ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 13174)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:48:00 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 633)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 13264)
+Completed 500 Internal Server Error in 475ms (Allocations: 18915)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:49:37 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 780)
+  Rendered layout layouts/application.html.erb (Duration: 83.7ms | Allocations: 29513)
+Completed 500 Internal Server Error in 515ms (ActiveRecord: 0.0ms | Allocations: 36791)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:49:39 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 12577)
+Completed 500 Internal Server Error in 416ms (ActiveRecord: 0.0ms | Allocations: 17628)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:50:47 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 780)
+  Rendered layout layouts/application.html.erb (Duration: 97.8ms | Allocations: 27196)
+Completed 500 Internal Server Error in 553ms (ActiveRecord: 0.0ms | Allocations: 34474)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:50:51 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 12577)
+Completed 500 Internal Server Error in 580ms (ActiveRecord: 0.0ms | Allocations: 17618)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:53:49 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 780)
+  Rendered layout layouts/application.html.erb (Duration: 142.9ms | Allocations: 38692)
+Completed 500 Internal Server Error in 728ms (ActiveRecord: 0.0ms | Allocations: 45970)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:54:51 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 780)
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 27762)
+Completed 500 Internal Server Error in 506ms (ActiveRecord: 0.0ms | Allocations: 35048)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:56:27 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 780)
+  Rendered layout layouts/application.html.erb (Duration: 241.6ms | Allocations: 54182)
+Completed 500 Internal Server Error in 733ms (ActiveRecord: 0.0ms | Allocations: 61460)
+
+
+  
+ActionView::Template::Error (couldn't find file 'gmaps/google' with type 'application/javascript'
+Checked in these paths: 
+  /Users/antonia/Desktop/Taller_de_integracion_T1/app/assets/config
+  /Users/antonia/Desktop/Taller_de_integracion_T1/app/assets/images
+  /Users/antonia/Desktop/Taller_de_integracion_T1/app/assets/javascript
+  /Users/antonia/Desktop/Taller_de_integracion_T1/app/assets/stylesheets
+  /Users/antonia/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  /Users/antonia/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actioncable-6.1.3.1/app/assets/javascripts
+  /Users/antonia/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activestorage-6.1.3.1/app/assets/javascripts
+  /Users/antonia/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionview-6.1.3.1/lib/assets/compiled
+  /Users/antonia/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/antonia/Desktop/Taller_de_integracion_T1/node_modules):
+  
+app/assets/javascript/application.js:18
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:56:40 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 115.9ms | Allocations: 37510)
+Completed 500 Internal Server Error in 565ms (ActiveRecord: 0.0ms | Allocations: 42550)
+
+
+  
+ActionView::Template::Error (require_tree argument must be a relative path):
+  
+app/assets/javascript/cable.js:6
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:58:10 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 21707)
+Completed 500 Internal Server Error in 500ms (ActiveRecord: 0.0ms | Allocations: 26653)
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+  
+app/assets/javascript/cable.js:6
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:58:27 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 165.6ms | Allocations: 45339)
+Completed 200 OK in 573ms (Views: 166.4ms | ActiveRecord: 0.0ms | Allocations: 50312)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:58:29 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 9295)
+Completed 200 OK in 428ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 14471)
+
+
+Started GET "/episodes/Breaking%20Bad/1" for 127.0.0.1 at 2021-04-08 00:58:31 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1174)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 9556)
+Completed 200 OK in 185ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 11759)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 00:58:32 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1045)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 9429)
+Completed 200 OK in 187ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 11610)
+
+
+Started GET "/characters/Walter%25Whitey" for 127.0.0.1 at 2021-04-08 00:58:35 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitey"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 169ms (ActiveRecord: 0.0ms | Allocations: 1539)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:58:35 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8671)
+Completed 200 OK in 386ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 13643)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:59:17 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 131.6ms | Allocations: 31549)
+Completed 200 OK in 537ms (Views: 132.2ms | ActiveRecord: 0.0ms | Allocations: 36515)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:59:19 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 262)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 8650)
+Completed 200 OK in 465ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 13694)
+
+
+Started GET "/episodes/Breaking%20Bad/4" for 127.0.0.1 at 2021-04-08 00:59:20 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 425)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8807)
+Completed 200 OK in 179ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 10471)
+
+
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-08 00:59:22 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8574)
+Completed 200 OK in 192ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 10262)
+
+
+Started GET "/characters/Jesse%25Pinkmans" for 127.0.0.1 at 2021-04-08 00:59:26 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkmans"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 181ms (ActiveRecord: 0.0ms | Allocations: 1525)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:59:26 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 8661)
+Completed 200 OK in 424ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 13627)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 00:59:45 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 261)
+  Rendered layout layouts/application.html.erb (Duration: 128.1ms | Allocations: 31133)
+Completed 200 OK in 528ms (Views: 128.7ms | ActiveRecord: 0.0ms | Allocations: 36125)
+
+
+Started GET "/episodes/Breaking%20Bad/6" for 127.0.0.1 at 2021-04-08 00:59:46 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 431)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8811)
+Completed 200 OK in 1731ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 10550)
+
+
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-08 00:59:49 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 8571)
+Completed 200 OK in 187ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 10252)
+
+
+Started GET "/characters/Jesse%25Pinkmans" for 127.0.0.1 at 2021-04-08 00:59:53 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkmans"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 203ms (ActiveRecord: 0.0ms | Allocations: 1525)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:59:53 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 8672)
+Completed 200 OK in 632ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 13644)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 01:00:29 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 132.5ms | Allocations: 32920)
+Completed 200 OK in 562ms (Views: 133.3ms | ActiveRecord: 0.0ms | Allocations: 37877)
+
+
+Started GET "/seasons/BB/2" for 127.0.0.1 at 2021-04-08 01:00:30 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 429)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 8808)
+Completed 200 OK in 419ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 13852)
+
+
+Started GET "/episodes/Breaking%20Bad/12" for 127.0.0.1 at 2021-04-08 01:00:31 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"12"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 8861)
+Completed 200 OK in 186ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 10529)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 01:00:33 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 194)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8574)
+Completed 200 OK in 221ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 10256)
+
+
+Started GET "/characters/Walter%25Whitey" for 127.0.0.1 at 2021-04-08 01:00:35 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%Whitey"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 175ms (ActiveRecord: 0.0ms | Allocations: 1523)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 01:00:35 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 8662)
+Completed 200 OK in 411ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 13629)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 01:06:20 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 541)
+  Rendered layouts/_alerts.html.erb (Duration: 0.7ms | Allocations: 186)
+  Rendered layout layouts/application.html.erb (Duration: 165.6ms | Allocations: 36609)
+Completed 200 OK in 567ms (Views: 167.8ms | Allocations: 42279)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 01:06:22 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 887)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 9300)
+Completed 200 OK in 414ms (Views: 14.7ms | Allocations: 15083)
+
+
+Started GET "/episodes/Breaking%20Bad/4" for 127.0.0.1 at 2021-04-08 01:06:23 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1080)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 9484)
+Completed 200 OK in 188ms (Views: 16.3ms | Allocations: 12247)
+
+
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-08 01:06:24 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1028)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 9444)
+Completed 200 OK in 223ms (Views: 19.8ms | Allocations: 12221)
+
+
+Started GET "/characters/Jesse%25Pinkmanw" for 127.0.0.1 at 2021-04-08 01:06:28 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkmanw"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 172ms (Allocations: 1524)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 01:06:28 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 8676)
+Completed 200 OK in 630ms (Views: 13.9ms | Allocations: 13642)
+
+
