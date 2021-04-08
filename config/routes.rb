@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'characters/:name', to: 'characters#show', as: 'character'
+  get 'characters/:name', to: 'characters#show', as: 'character', name: %r{([^/])+?}
   get 'characters/search'
   get 'episodes/show'
   get 'episode/show'

@@ -1,2 +1,183 @@
-<h1>Characters#show</h1>
-<p>Find me in app/views/characters/show.html.erb</p>
+<meta name="viewport" content="width=device-width, initial-scale=1" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<section class="hero is-link">
+  <div class="hero-body">
+    <div class="container">
+      <nav class="level">
+        <div class="level-item">
+          <h1 class="title">Tarea 1: Consumir una API</h1>
+        </div>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="section">
+    <nav class="level-left">
+      <div class="level-item">
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+      </div>
+    </nav>
+</section>
+<section class="section">
+  <div class="container">
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-128x128">
+          <%= image_tag(@character["img"]) %>
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <h1> <%= @character["name"]%></h1> <h4><%= "aka %s" % @character["nickname"]%></h4>
+            <br>
+            <h5>Status:</h5> <p><%= @character["status"]%></p>
+            <br>
+            <h5>Portrayed:</h5> <p><%= @character["portrayed"]%> </p>
+            <br>
+            <h5>Occupation:</h5>
+            <%@character["occupation"].each do |o| %>
+                <td><%= o %></td> <br>
+            <% end %>
+            <br>
+            <h5>Appearances Breaking Bad:</h5>
+            <%if @character["appearance"].empty? %>
+              <%= "No Appearances" %> <br>
+            <%else %>
+              <%@character["appearance"].each do |t| %>
+                    <td><%= link_to "Season %d" % t, season_path("BB",t)%></td> <br>
+              <% end %>
+            <%end %>
+            <br>
+            <h5>Appearances Better Call Saul: </h5>
+            <%if @character["better_call_saul_appearance"].empty? %>
+              <%= "No Appearances" %> <br>
+            <%else %>
+              <%@character["better_call_saul_appearance"].each do |t| %>
+              <td><%= link_to "Season %d" % t, season_path("Saul",t)%></td> <br>
+              <% end %>
+            <%end %>
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    Copyright © 2021 Tarea 1 Antonia Christensen. All rights reserved.
+    <div class="level-right">
+      <p class="level-item">
+      </p>
+    </div>
+  </div>
+</footer>
+
+

@@ -63,7 +63,7 @@
     </nav>
     <nav class="level-left">
       <div class="level-item">
-          <%= link_to char, character_path(char) %> <br>
+          <%= link_to char, character_path(char.gsub(/\s+/, "%")) %> <br>
         <% end %>
       </div>
     </nav>
