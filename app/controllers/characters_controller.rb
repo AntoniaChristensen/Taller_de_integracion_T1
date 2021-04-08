@@ -12,6 +12,8 @@ class CharactersController < ApplicationController
         url_quote = 'https://tarea-1-breaking-bad.herokuapp.com/api/quote?author=%s' % ur
         @quotes = JSON.parse(HTTP.get(url_quote))
       end
+    elsif response.code == 429
+      redirect_to root_path, alert: 'Too Many Requests'
     else
       redirect_to root_path, alert: 'Character Not Found'
     end

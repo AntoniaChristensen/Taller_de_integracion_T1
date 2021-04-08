@@ -1,5 +1,5 @@
 class SeasonsController < ApplicationController
-  before_action :get_episodios, only: %i[home show]
+  before_action :get_episodios, only: %i[show home]
 
   def home
   end
@@ -8,16 +8,26 @@ class SeasonsController < ApplicationController
     @episodios = {}
     if params[:serie] == "BB"
       @temp = $temporadas_bb[params[:id]]
-      @serie = "Breaking Bad"
-      $response_episodios_bb.each do |episode|
-        @episodios[episode["title"]] = episode["episode_id"]
+      if @temp.nil?
+        redirect_to root_path, alert: 'Season Not Found'
+      else
+        @serie = "Breaking Bad"
+        $response_episodios_bb.each do |episode|
+          @episodios[episode["title"]] = episode["episode_id"]
+        end
       end
     elsif params[:serie] == "Saul"
       @serie = "Better Call Saul"
       @temp = $temporadas_saul[params[:id]]
-      $response_episodios_saul.each do |episode|
-        @episodios[episode["title"]] = episode["episode_id"]
+      if @temp.nil?
+        redirect_to root_path, alert: 'Season Not Found'
+      else
+        $response_episodios_saul.each do |episode|
+          @episodios[episode["title"]] = episode["episode_id"]
+        end
       end
+    else
+      redirect_to root_path, alert: 'TV Series Not Found'
     end
   end
 

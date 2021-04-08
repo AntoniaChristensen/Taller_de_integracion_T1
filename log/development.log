@@ -7996,3 +7996,342 @@ Processing by CharactersController#show as HTML
 Completed 200 OK in 446ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 13770)
 
 
+Started GET "/seasons/BB/5" for 127.0.0.1 at 2021-04-08 12:08:10 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"5"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1949)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/seasons_controller.rb:10:in `show'
+Started GET "/seasons/BB/5" for 127.0.0.1 at 2021-04-08 12:08:42 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1183)
+  Rendered layouts/_alerts.html.erb (Duration: 1.8ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 98.6ms | Allocations: 25249)
+Completed 200 OK in 568ms (Views: 101.4ms | ActiveRecord: 0.0ms | Allocations: 31244)
+
+
+Started GET "/episodes/Breaking%20Bad/51" for 127.0.0.1 at 2021-04-08 12:08:46 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"51"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1225)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 9639)
+Completed 200 OK in 181ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 12026)
+
+
+Started GET "/characters/Jesse%25Pinkman" for 127.0.0.1 at 2021-04-08 12:08:55 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Jesse%Pinkman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1217)
+  Rendered layouts/_alerts.html.erb (Duration: 0.6ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 9622)
+Completed 200 OK in 361ms (Views: 31.4ms | ActiveRecord: 0.0ms | Allocations: 13265)
+
+
+Started GET "/seasons/BB/5" for 127.0.0.1 at 2021-04-08 12:08:57 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 518)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 9030)
+Completed 200 OK in 420ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 14690)
+
+
+Started GET "/seasons/BB/6" for 127.0.0.1 at 2021-04-08 12:13:23 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"6"}
+Completed 500 Internal Server Error in 490ms (ActiveRecord: 0.0ms | Allocations: 5701)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/controllers/seasons_controller.rb:11:in `show'
+Started GET "/seasons/BB/2" for 127.0.0.1 at 2021-04-08 12:13:47 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 436)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 9123)
+Completed 200 OK in 460ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 14349)
+
+
+Started GET "/seasons/BB/24" for 127.0.0.1 at 2021-04-08 12:13:51 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"24"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 435ms (ActiveRecord: 0.0ms | Allocations: 4856)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 12:13:51 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 542)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 9130)
+Completed 200 OK in 463ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 14234)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 12:18:39 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 263)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8888)
+Completed 200 OK in 408ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 14529)
+
+
+Started GET "/seasons/CB/1" for 127.0.0.1 at 2021-04-08 12:18:45 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"CB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1483)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1547)
+Completed 500 Internal Server Error in 391ms (ActiveRecord: 0.0ms | Allocations: 6495)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    203:           <h1> <%= @serie %></h1> <h4><%= "Season %d" % params[:id]%></h4>
+    204:           <br>
+    205:           <h5>Episodes:</h5>
+    206:           <% @temp.each do |e| %>
+    207:             <td><%= link_to e, episode_path(@serie, @episodios[e])%></td> <br>
+    208:           <% end %>
+    209:           <br>
+  
+app/views/seasons/show.html.erb:206
+Started GET "/seasons/CB/1" for 127.0.0.1 at 2021-04-08 12:19:53 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"CB", "id"=>"1"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 379ms (Allocations: 4901)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 12:19:54 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 268)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8957)
+Completed 200 OK in 393ms (Views: 14.6ms | Allocations: 14047)
+
+
+Started GET "/seasons/BB/3" for 127.0.0.1 at 2021-04-08 12:19:57 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 433)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8832)
+Completed 200 OK in 429ms (Views: 15.2ms | Allocations: 14428)
+
+
+Started GET "/seasonse/BB/3" for 127.0.0.1 at 2021-04-08 12:20:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/seasonse/BB/3"):
+  
+Started GET "/seasons/BB/3" for 127.0.0.1 at 2021-04-08 12:20:13 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 431)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 9111)
+Completed 200 OK in 427ms (Views: 14.8ms | Allocations: 14099)
+
+
+Started GET "/episodes/Breaking%20Bad/21" for 127.0.0.1 at 2021-04-08 12:20:16 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"21"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 512)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 8916)
+Completed 200 OK in 177ms (Views: 14.1ms | Allocations: 11280)
+
+
+Started GET "/episodes/Breaking%20Bad/91" for 127.0.0.1 at 2021-04-08 12:20:25 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"91"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 377)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8776)
+Completed 200 OK in 175ms (Views: 14.7ms | Allocations: 10442)
+
+
+Started GET "/episodes/Breaking%20Bad/91" for 127.0.0.1 at 2021-04-08 12:23:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/episodes/Breaking%20Bad/91"):
+  
+Started GET "/" for 127.0.0.1 at 2021-04-08 12:23:55 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 537)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 9694)
+Completed 200 OK in 706ms (Views: 16.9ms | Allocations: 15423)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 12:23:55 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 8950)
+Completed 200 OK in 647ms (Views: 15.1ms | Allocations: 13929)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 12:23:57 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 831)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9516)
+Completed 200 OK in 429ms (Views: 14.4ms | Allocations: 15255)
+
+
+Started GET "/episodes/1" for 127.0.0.1 at 2021-04-08 12:24:00 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1166)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9570)
+Completed 200 OK in 202ms (Views: 16.2ms | Allocations: 11859)
+
+
+Started GET "/episodes/91" for 127.0.0.1 at 2021-04-08 12:24:06 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"91"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 377)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 8776)
+Completed 200 OK in 175ms (Views: 13.5ms | Allocations: 10445)
+
+
+Started GET "/episodes/191" for 127.0.0.1 at 2021-04-08 12:24:11 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"191"}
+Completed 500 Internal Server Error in 173ms (Allocations: 2319)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/episodes_controller.rb:12:in `show'
+Started GET "/episodes/191" for 127.0.0.1 at 2021-04-08 12:24:59 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"191"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 442ms (Allocations: 1523)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 12:24:59 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 268)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 8957)
+Completed 200 OK in 521ms (Views: 14.2ms | Allocations: 14106)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 17:23:54 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 680)
+  Rendered layouts/_alerts.html.erb (Duration: 1.6ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 86.6ms | Allocations: 25255)
+Completed 200 OK in 653ms (Views: 91.3ms | ActiveRecord: 0.0ms | Allocations: 32572)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 17:23:55 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8671)
+Completed 200 OK in 648ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 14055)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 17:23:58 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 845)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9532)
+Completed 200 OK in 507ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 15335)
+
+
+Started GET "/episodes/6" for 127.0.0.1 at 2021-04-08 17:24:02 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1123)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9536)
+Completed 200 OK in 304ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 12357)
+
+
+Started GET "/episodes/6" for 127.0.0.1 at 2021-04-08 17:34:46 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1113)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 10274)
+Completed 200 OK in 391ms (Views: 17.6ms | Allocations: 12748)
+
+
+Started GET "/episodes/69" for 127.0.0.1 at 2021-04-08 17:35:10 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"69"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 377)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8781)
+Completed 200 OK in 703ms (Views: 12.2ms | Allocations: 10492)
+
+

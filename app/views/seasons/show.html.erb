@@ -204,7 +204,7 @@
           <br>
           <h5>Episodes:</h5>
           <% @temp.each do |e| %>
-            <td><%= link_to e, episode_path(@serie, @episodios[e])%></td> <br>
+            <td><%= link_to e, episode_path(@episodios[e])%></td> <br>
           <% end %>
           <br>
           </p>
