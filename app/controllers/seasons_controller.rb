@@ -6,7 +6,6 @@ class SeasonsController < ApplicationController
 
   def show
     @episodios = {}
-    puts(params[:serie])
     if params[:serie] == "BB"
       @temp = $temporadas_bb[params[:id]]
       @serie = "Breaking Bad"
