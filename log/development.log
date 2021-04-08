@@ -5133,3 +5133,81 @@ Processing by CharactersController#show as HTML
 Completed 200 OK in 225ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 10567)
 
 
+Started GET "/characters/Mike%25Ehrmantraut" for 127.0.0.1 at 2021-04-07 22:43:25 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantraut"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 88.0ms | Allocations: 19626)
+Completed 200 OK in 303ms (Views: 92.2ms | ActiveRecord: 0.0ms | Allocations: 23695)
+
+
+Started GET "/characters/Mike%25Ehrmantraut" for 127.0.0.1 at 2021-04-07 22:44:00 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantraut"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 8834)
+Completed 200 OK in 205ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 11277)
+
+
+Started GET "/characters/Mike%25Ehrmantraut" for 127.0.0.1 at 2021-04-07 22:44:25 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantraut"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 9056)
+Completed 200 OK in 218ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 11504)
+
+
+Started GET "/characters/Mike%25Ehrmantraut" for 127.0.0.1 at 2021-04-07 22:45:03 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantraut"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 9018)
+Completed 200 OK in 268ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 11456)
+
+
+Started GET "/characters/Mike%25Ehrmantraut" for 127.0.0.1 at 2021-04-07 22:46:17 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantraut"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 9228)
+Completed 200 OK in 207ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 11676)
+
+
+Started GET "/characters/Mike%25Ehrmantraut" for 127.0.0.1 at 2021-04-07 22:46:48 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantraut"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 9020)
+Completed 200 OK in 257ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 11452)
+
+
+Started GET "/characters/Mike%25Ehrmantraut" for 127.0.0.1 at 2021-04-07 22:48:07 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Mike%Ehrmantraut"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 9230)
+Completed 200 OK in 205ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 11668)
+
+
