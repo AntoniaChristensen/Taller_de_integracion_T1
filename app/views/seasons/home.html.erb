@@ -8,6 +8,15 @@
           <h1 class="title">Tarea 1: Consumir una API</h1>
         </div>
       </nav>
+      <nav class="level">
+        <div class="level-item">
+          <%= form_tag characters_index_path, :method => "get" do %>
+            <%= label_tag :search, "Type your search for characters" %>
+            <%= text_field_tag :search, params[:search] %>
+            <%= submit_tag  "Search", :name => nil%>
+          <%end %>
+        </div>
+      </nav>
     </div>
   </div>
 </section>
