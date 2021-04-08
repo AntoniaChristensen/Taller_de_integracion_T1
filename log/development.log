@@ -7904,3 +7904,95 @@ Processing by SeasonsController#home as HTML
 Completed 200 OK in 630ms (Views: 13.9ms | Allocations: 13642)
 
 
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 09:32:33 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1044)
+  Rendered layout layouts/application.html.erb (Duration: 142.5ms | Allocations: 16457)
+Completed 500 Internal Server Error in 762ms (ActiveRecord: 0.0ms | Allocations: 23816)
+
+
+  
+ActionView::Template::Error (link_directory argument must be a directory):
+  
+app/assets/config/manifest.js:2
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 09:34:58 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 297)
+  Rendered layouts/_alerts.html.erb (Duration: 1.0ms | Allocations: 195)
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 31266)
+Completed 200 OK in 621ms (Views: 95.0ms | ActiveRecord: 0.0ms | Allocations: 36357)
+
+
+Started GET "/episodes/Breaking%20Bad/3" for 127.0.0.1 at 2021-04-08 09:35:01 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"serie"=>"Breaking Bad", "id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1187)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 9593)
+Completed 200 OK in 219ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 11982)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 09:35:02 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1173)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 9707)
+Completed 200 OK in 436ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 13388)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 09:35:50 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1187)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 186)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 10064)
+Completed 200 OK in 484ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 13771)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 09:36:24 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1187)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 10065)
+Completed 200 OK in 503ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 13777)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 09:36:40 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1189)
+  Rendered layouts/_alerts.html.erb (Duration: 0.7ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 10195)
+Completed 200 OK in 399ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 13908)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-08 09:36:52 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1185)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 186)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 10062)
+Completed 200 OK in 446ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 13770)
+
+

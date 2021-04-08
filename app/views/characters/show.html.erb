@@ -224,6 +224,15 @@
               <td><%= link_to "Season %d" % t, season_path("Saul",t)%></td> <br>
               <% end %>
             <%end %>
+            <br>
+            <h5>Quotes: </h5>
+            <%if @quotes.empty? %>
+              <%= "No Quotes" %> <br>
+            <%else %>
+              <%@quotes.each do |q| %>
+                <p><%= '"%s"' %q["quote"]%></p>
+              <% end %>
+            <%end %>
           </p>
         </div>
       </div>
