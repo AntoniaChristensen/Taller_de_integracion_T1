@@ -4,186 +4,204 @@
   <div class="hero-body">
     <div class="container">
       <nav class="level">
-        <div class="level-item">
-          <h1 class="title">Tarea 1: Consumir una API</h1>
+        <div class="level-left">
+          <div class="level-item">
+            <h1 class="title">Tarea 1: Consumir una API</h1>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <%= link_to('Home', root_path, :class => "button is-link is-inverted") %>
+          </div>
         </div>
       </nav>
     </div>
   </div>
 </section>
 <section class="section">
-  <nav class="level-left">
-    <div class="level-item">
+  <div class="container">
+    <nav class="level">
+      <div class="level-item">
+        <%= form_tag characters_index_path, :method => "get" do %>
+          <%= label_tag :search, "Character Search" %>
+          <%= text_field_tag :search, params[:search], :placeholder => "Type your search" %>
+          <%= submit_tag  "Search", :name => nil%>
+        <%end %> <br>
+      </div>
+    </nav>
+    <div class="level">
+      <div class="level-item">
         <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-warning">
+        <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-danger">
+        <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-info">
+        <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
-      <span class="icon has-text-success">
+        <span class="icon has-text-success">
           <i class="fas fa-atom"></i>
         </span>
+      </div>
     </div>
-  </nav>
+  </div>
 </section>
 <section class="section">
   <div class="container">

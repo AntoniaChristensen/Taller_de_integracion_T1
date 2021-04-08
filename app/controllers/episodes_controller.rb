@@ -22,7 +22,7 @@ class EpisodesController < ApplicationController
       else
         @serie = @episode['series']
         fecha = (@episode['air_date'].split('T')[0]).split('-')
-        @date = '%d %s, %d' %[fecha[2], $calendario[fecha[1]], fecha[0]]
+        @date = '%s %s, %s' %[fecha[2], $calendario[fecha[1]], fecha[0]]
       end
     elsif response.code == 429
       redirect_to root_path, alert: 'Too Many Requests'

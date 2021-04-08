@@ -4,17 +4,15 @@
   <div class="hero-body">
     <div class="container">
       <nav class="level">
-        <div class="level-item">
-          <h1 class="title">Tarea 1: Consumir una API</h1>
+        <div class="level-left">
+          <div class="level-item">
+            <h1 class="title">Tarea 1: Consumir una API</h1>
+          </div>
         </div>
-      </nav>
-      <nav class="level">
-        <div class="level-item">
-          <%= form_tag characters_index_path, :method => "get" do %>
-            <%= label_tag :search, "Type your search for characters" %>
-            <%= text_field_tag :search, params[:search] %>
-            <%= submit_tag  "Search", :name => nil%>
-          <%end %>
+        <div class="level-right">
+          <div class="level-item">
+            <%= link_to('Home', root_path, :class => "button is-link is-inverted") %>
+          </div>
         </div>
       </nav>
     </div>
@@ -24,13 +22,177 @@
   <div class="container">
     <nav class="level">
       <div class="level-item">
+        <%= form_tag characters_index_path, :method => "get" do %>
+          <%= label_tag :search, "Character Search" %>
+          <%= text_field_tag :search, params[:search], :placeholder => "Type your search" %>
+          <%= submit_tag  "Search", :name => nil%>
+        <%end %> <br>
+      </div>
+    </nav>
+    <div class="level">
+      <div class="level-item">
         <span class="icon has-text-warning">
           <i class="fas fa-atom"></i>
         </span>
         <span class="icon has-text-danger">
           <i class="fas fa-atom"></i>
         </span>
-        <h1 class="subtitle">Bienvenid@</h1>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-info">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-success">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-warning">
+          <i class="fas fa-atom"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-atom"></i>
+        </span>
         <span class="icon has-text-info">
           <i class="fas fa-atom"></i>
         </span>
@@ -38,12 +200,12 @@
           <i class="fas fa-atom"></i>
         </span>
       </div>
-    </nav>
+    </div>
   </div>
 </section>
 <section class="section">
   <div class="container">
-    <nav class="level-left">
+    <nav class="level">
       <div class="level-item">
         <div class="notification is-link">
           Breaking Bad
@@ -52,7 +214,7 @@
     </nav>
     <br>
     <% $temporadas_bb.each_key do |temp| %>
-      <nav class="level-left">
+      <nav class="level">
         <div class="level-item">
           <br>
           <td><%= link_to "Season %d" % temp, season_path("BB",temp)%></td> <br>
@@ -62,7 +224,7 @@
     <% end %>
   </div>
   <div class="container">
-    <nav class="level-left">
+    <nav class="level">
       <div class="level-item">
         <div class="notification is-link">
           Better Call Saul
@@ -71,7 +233,7 @@
     </nav>
     <br>
     <% $temporadas_saul.each_key do |temp| %>
-      <nav class="level-left">
+      <nav class="level">
         <div class="level-item">
           <br>
           <td><%= link_to "Season %d" % temp, season_path("Saul",temp)%></td> <br>
