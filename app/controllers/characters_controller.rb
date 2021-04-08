@@ -19,6 +19,32 @@ class CharactersController < ApplicationController
     end
   end
 
-  def search
+  def index
+    @busqueda = search(params[:search])
+  end
+
+  def search(s)
+    if s
+      name = params[:search].split(" ")
+      ur = name.join("+")
+      url_characters = 'https://tarea-1-breaking-bad.herokuapp.com/api/characters/?name=%s' % ur
+      chars = HTTP.get(url_characters)
+      if chars.status.success?
+        $search_characters = JSON.parse(chars)
+        if $search_characters.nil?
+          redirect_to root_path, alert: 'Character Not Found'
+        end
+      elsif chars.code == 429
+        redirect_to root_path, alert: 'Too Many Requests'
+      else
+        redirect_to root_path, alert: 'Character Not Found'
+      end
+    end
+  end
+
+  private
+
+  def char_params
+    params.permit(:name, :search)
   end
 end
