@@ -207,40 +207,46 @@
   <div class="container">
     <nav class="level">
       <div class="level-item">
-        <div class="notification is-link">
-          Breaking Bad
-        </div>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-128x128">
+              <%= image_tag("https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg") %>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <h1> Breaking Bad </h1> <h4>Seasons</h4>
+              <% $temporadas_bb.each_key do |temp| %>
+                <td><%= link_to "Season %d" % temp, season_path("BB",temp)%></td> <br>
+              <% end %>
+              <br>
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
-    </nav>
-    <br>
-    <% $temporadas_bb.each_key do |temp| %>
-      <nav class="level">
-        <div class="level-item">
-          <br>
-          <td><%= link_to "Season %d" % temp, season_path("BB",temp)%></td> <br>
-        </div>
-      </nav>
-      <br>
-    <% end %>
-  </div>
-  <div class="container">
-    <nav class="level">
       <div class="level-item">
-        <div class="notification is-link">
-          Better Call Saul
-        </div>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-128x128">
+              <%= image_tag("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPGTwuT0Wg5XHC71WlpvmHInG00hkhDd4SiUGNjlQALyvgr6Fh") %>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <h1> Better Call Saul </h1> <h4>Seasons</h4>
+              <% $temporadas_saul.each_key do |temp| %>
+                <td><%= link_to "Season %d" % temp, season_path("Saul",temp)%></td> <br>
+              <% end %>
+              <br>
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
     </nav>
-    <br>
-    <% $temporadas_saul.each_key do |temp| %>
-      <nav class="level">
-        <div class="level-item">
-          <br>
-          <td><%= link_to "Season %d" % temp, season_path("Saul",temp)%></td> <br>
-        </div>
-      </nav>
-      <br>
-    <% end %>
   </div>
 </section>
 <footer class="footer">

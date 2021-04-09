@@ -9684,3 +9684,293 @@ Processing by EpisodesController#show as HTML
 Completed 200 OK in 178ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 11132)
 
 
+Started GET "/characters/index?search=" for 127.0.0.1 at 2021-04-08 19:57:18 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>""}
+Completed 500 Internal Server Error in 348ms (ActiveRecord: 0.0ms | Allocations: 5863)
+
+
+  
+NoMethodError (undefined method `status' for #<Array:0x00007feeb434eab8>):
+  
+app/controllers/characters_controller.rb:47:in `search'
+app/controllers/characters_controller.rb:23:in `index'
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:06:06 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 175.1ms | Allocations: 26104)
+Completed 200 OK in 617ms (Views: 179.2ms | ActiveRecord: 0.0ms | Allocations: 33416)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:06:07 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 389)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 8895)
+Completed 200 OK in 446ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 13863)
+
+
+Started GET "/seasons/BB/1" for 127.0.0.1 at 2021-04-08 22:06:15 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1078)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 9869)
+Completed 200 OK in 546ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 15671)
+
+
+Started GET "/episodes/1" for 127.0.0.1 at 2021-04-08 22:06:17 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1401)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 9918)
+Completed 200 OK in 184ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 12786)
+
+
+Started GET "/characters/index?search=W" for 127.0.0.1 at 2021-04-08 22:06:23 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"W"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1224)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 10008)
+Completed 200 OK in 259ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 12395)
+
+
+Started GET "/characters/index?search=M" for 127.0.0.1 at 2021-04-08 22:06:30 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"M"}
+Completed 500 Internal Server Error in 853ms (ActiveRecord: 0.0ms | Allocations: 4482)
+
+
+  
+NoMethodError (undefined method `status' for #<Array:0x00007fafd38ba508>):
+  
+app/controllers/characters_controller.rb:47:in `search'
+app/controllers/characters_controller.rb:23:in `index'
+Started GET "/characters/index?search=M" for 127.0.0.1 at 2021-04-08 22:08:39 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"M"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 795)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 9706)
+Completed 200 OK in 492ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 13109)
+
+
+Started GET "/characters/index?search=" for 127.0.0.1 at 2021-04-08 22:08:54 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3260)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 12046)
+Completed 200 OK in 2179ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 22660)
+
+
+Started GET "/characters/index?search=5" for 127.0.0.1 at 2021-04-08 22:09:38 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 159)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8661)
+Completed 200 OK in 207ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 10320)
+
+
+Started GET "/characters/index?search=5" for 127.0.0.1 at 2021-04-08 22:09:44 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 159)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8664)
+Completed 200 OK in 179ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 10323)
+
+
+Started GET "/characters/index?search=5" for 127.0.0.1 at 2021-04-08 22:10:28 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 167)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 8958)
+Completed 200 OK in 237ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 10746)
+
+
+Started GET "/characters/index?search=5" for 127.0.0.1 at 2021-04-08 22:11:40 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"5"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 210ms (ActiveRecord: 0.0ms | Allocations: 1546)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:11:40 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 391)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 8908)
+Completed 200 OK in 470ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 14053)
+
+
+Started GET "/characters/index?search=34" for 127.0.0.1 at 2021-04-08 22:12:15 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"34"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 251ms (ActiveRecord: 0.0ms | Allocations: 1526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:12:16 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 382)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 9023)
+Completed 200 OK in 423ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 14000)
+
+
+Started GET "/characters/index?search=%3B" for 127.0.0.1 at 2021-04-08 22:12:27 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>";"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 185ms (ActiveRecord: 0.0ms | Allocations: 1524)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:12:27 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 382)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 8887)
+Completed 200 OK in 489ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 13858)
+
+
+Started GET "/characters/index?search=12" for 127.0.0.1 at 2021-04-08 22:12:31 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"12"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 209ms (ActiveRecord: 0.0ms | Allocations: 1523)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:12:32 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 382)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 9172)
+Completed 200 OK in 403ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 14138)
+
+
+Started GET "/characters/index?search=Q" for 127.0.0.1 at 2021-04-08 22:12:42 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"Q"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 244)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 9035)
+Completed 200 OK in 222ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 10835)
+
+
+Started GET "/characters/index?search=efe" for 127.0.0.1 at 2021-04-08 22:14:12 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>"efe"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 270ms (ActiveRecord: 0.0ms | Allocations: 1523)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:14:12 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 382)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 8887)
+Completed 200 OK in 1493ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 13860)
+
+
+Started GET "/characters/index?search=" for 127.0.0.1 at 2021-04-08 22:14:19 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"search"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3258)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 12044)
+Completed 200 OK in 2869ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 22661)
+
+
+Started GET "/characters/Saul%25Goodman" for 127.0.0.1 at 2021-04-08 22:14:26 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Saul%Goodman"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1527)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 10318)
+Completed 200 OK in 387ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 13590)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:14:35 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 389)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 8895)
+Completed 200 OK in 494ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 14478)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:18:59 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 993)
+  Rendered layouts/_alerts.html.erb (Duration: 0.6ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 10256)
+Completed 200 OK in 546ms (Views: 18.6ms | Allocations: 15935)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:19:43 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 986)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 10248)
+Completed 200 OK in 461ms (Views: 17.6ms | Allocations: 15920)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-08 22:23:10 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 994)
+  Rendered layouts/_alerts.html.erb (Duration: 0.7ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 10022)
+Completed 200 OK in 503ms (Views: 21.6ms | Allocations: 15698)
+
+
