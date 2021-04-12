@@ -1,5 +1,5 @@
 class SeasonsController < ApplicationController
-  before_action :get_episodios, only: %i[show home]
+  before_action :get_episodios, only: %i[home show]
 
   def home
   end

@@ -9974,3 +9974,143 @@ Processing by SeasonsController#home as HTML
 Completed 200 OK in 503ms (Views: 21.6ms | Allocations: 15698)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-11 22:51:37 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1222)
+  Rendered layouts/_alerts.html.erb (Duration: 0.9ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 106.7ms | Allocations: 26109)
+Completed 200 OK in 547ms (Views: 111.6ms | ActiveRecord: 0.0ms | Allocations: 33521)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-11 22:51:38 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 459)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 9262)
+Completed 200 OK in 425ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 24505)
+
+
+Started GET "/seasons/BB/2" for 127.0.0.1 at 2021-04-11 22:51:40 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1197)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 9801)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 10432)
+
+
+Started GET "/episodes/8" for 127.0.0.1 at 2021-04-11 22:51:42 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1351)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 10142)
+Completed 200 OK in 242ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 12541)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-11 22:51:47 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 459)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 8967)
+Completed 200 OK in 465ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 14089)
+
+
+Started GET "/seasons/BB/4" for 127.0.0.1 at 2021-04-11 22:51:48 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 426)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 9320)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 9792)
+
+
+Started GET "/episodes/35" for 127.0.0.1 at 2021-04-11 22:51:49 -0400
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering layout layouts/application.html.erb
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 693)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 9194)
+Completed 200 OK in 172ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 11038)
+
+
+Started GET "/characters/Walter%25White" for 127.0.0.1 at 2021-04-11 22:51:50 -0400
+Processing by CharactersController#show as HTML
+  Parameters: {"name"=>"Walter%White"}
+  Rendering layout layouts/application.html.erb
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1440)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 9955)
+Completed 200 OK in 354ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 13615)
+
+
+Started GET "/seasons/BB/2" for 127.0.0.1 at 2021-04-11 22:51:54 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 432)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 9314)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 9780)
+
+
+Started GET "/seasons/BB/2" for 127.0.0.1 at 2021-04-11 22:54:37 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1258)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 10521)
+Completed 200 OK in 466ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 16482)
+
+
+Started GET "/seasons/BB/2" for 127.0.0.1 at 2021-04-11 22:54:53 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"BB", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1252)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 10238)
+Completed 200 OK in 427ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 16070)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-11 22:55:00 -0400
+Processing by SeasonsController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/home.html.erb within layouts/application
+  Rendered seasons/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1038)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 9821)
+Completed 200 OK in 442ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 15222)
+
+
+Started GET "/seasons/Saul/2" for 127.0.0.1 at 2021-04-11 22:55:02 -0400
+Processing by SeasonsController#show as HTML
+  Parameters: {"serie"=>"Saul", "id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering seasons/show.html.erb within layouts/application
+  Rendered seasons/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 409)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8914)
+Completed 200 OK in 451ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 14216)
+
+

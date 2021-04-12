@@ -221,8 +221,10 @@
           <h1> <%= @serie %></h1> <h4><%= "Season %d" % params[:id]%></h4>
           <br>
           <h5>Episodes:</h5>
+          <% i = 1 %>
           <% @temp.each do |e| %>
-            <td><%= link_to e, episode_path(@episodios[e])%></td> <br>
+            <td><%="%d. " % i %><%= link_to e, episode_path(@episodios[e])%></td> <br>
+            <%i+= 1 %>
           <% end %>
           <br>
           </p>
