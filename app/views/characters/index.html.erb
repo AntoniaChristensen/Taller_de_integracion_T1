@@ -205,19 +205,27 @@
 </section>
 <section class="section">
   <div class="container">
-    <nav class="level">
-      <div class="level-item">
-        <h1 class="title">Search Results </h1>
-      </div>
-    </nav>
-    <%@busqueda.each do |char| %>
-      <nav class="level">
-        <div class="level-item">
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-128x128">
+          <%= image_tag("https://pics.freeicons.io/uploads/icons/png/3973644001582960208-512.png") %>
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+          <h1> Character Search Results </h1>
           <br>
-          <td><%= link_to char["name"], character_path(char["name"].gsub(/\s+/, "%")) %> </td>
+          <% i = 1 %>
+          <%@busqueda.each do |char| %>
+            <td><%="%d." % i%></td> <td> <%= link_to char["name"], character_path(char["name"].gsub(/\s+/, "%")) %> </td><br>
+            <%i+= 1 %>
+          <% end %>
+          <br>
+          </p>
         </div>
-      </nav>
-    <% end %>
+      </div>
+    </article>
   </div>
 </section>
 <section class="section">
